@@ -188,7 +188,7 @@ const Evaluation = () => {
                       <span><b>Phone</b> : {result?.phone ? result.phone : "XXXXXXXXXX"}</span>
                     </div>
                     <div className="personalinfo">
-                      <span><b>Summary</b> : {result?.description ? result.description : "Candidates profile summary"}</span>
+                      <span><b>Summary</b> : {result?.summary ? result.summary : "Candidates profile summary"}</span>
                     </div>
                     <div className="personalinfo">
                       <span><b>Profile Review</b> : {result?.resion ? result.resion : "Candidates profile summary"}</span>
