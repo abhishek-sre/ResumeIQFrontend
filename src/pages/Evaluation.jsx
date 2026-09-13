@@ -145,7 +145,6 @@ const Evaluation = () => {
                         </> 
                       )
                     }
-                    <span id="overallLabel">{result.selectionRecommendation}</span>
                   </div>
                 </div> 
       
