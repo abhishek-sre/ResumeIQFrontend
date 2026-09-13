@@ -170,7 +170,7 @@ const Evaluation = () => {
                     <div className="stat-item">
                       <i className="fas fa-clock"></i> Experience 
                       <span className="defaultValue">
-                        {result?.experienceMatch ? result?.experienceMatch : "0"} % 
+                        {result?.experienceMatch ? result.experienceMatch : "0"} % 
                       </span>
                     </div>
                   </div>
@@ -219,14 +219,12 @@ const Evaluation = () => {
                     }
                   </div>
                 </div>
-                <div class="footer-note">
-                  <span><i class="fas fa-lightbulb" style={{"color": "#f5b342"}}></i> Keywords: {result?.totalExperience} · {result?.currentDesignation}</span>
-                  <span><i class="fas fa-sync-alt"></i> instant</span>
-                </div>
+                
                 </>
               ) : ""}
             </div>
-          )}    
+          )}  
+         
       </div>
     </>
   );

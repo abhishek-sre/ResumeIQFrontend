@@ -946,3 +946,12 @@
     /* margin: revert-layer; */
     margin-left: auto;
 }
+
+.privecyText{
+  font-size: 0.8rem;
+}
+
+.resumePage strong {
+    color: #101a2c;
+    font-size: 17px;
+}
