@@ -98,7 +98,7 @@ const Evaluation = () => {
                 onChange={handelToChange}
                 name="resumeText" 
                 defaultValue={formValue.resumeText} 
-                placeholder={validationError.resumeError ? validationError.resumeError : "Please enter job description"}>
+                placeholder={validationError.resumeError ? validationError.resumeError : "Paste the job description you want to evaluate your resume against. ResumeIQ will analyze the JD, compare it with your resume, and provide a match score showing how valuable and relevant your CV is for the role."}>
                 </textarea>
                 <div className="action-row">
                     <label htmlFor="fileInput" className="upload-btn">
