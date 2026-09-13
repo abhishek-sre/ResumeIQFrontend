@@ -150,11 +150,9 @@ const Evaluation = () => {
                 </div> 
       
                 <div className="score-row">
-                  <div className="score-circle-wrapper">
-                    <div class="score-circle" id="scoreCircle">
-                      <span class="score-number" id="scoreNum">{result?.matchScore ? result.matchScore : 0} </span>
-                      <span class="score-label">/ 100</span>
-                    </div>
+                  <div class="circle" id="scoreCircle">
+                    <span class="number" id="scoreNum">{result?.matchScore ? result.matchScore : 0}</span>
+                    <span class="label">/ 100</span>
                   </div>
                   
                   <div className="stats">
