@@ -151,8 +151,10 @@ const Evaluation = () => {
       
                 <div className="score-row">
                   <div className="">
-                    <ScoreRing score={result?.matchScore ? result.matchScore : 0} label="" />
-                    <p>ATS Score</p>
+                    <div class="score-circle" id="scoreCircle">
+                      <span class="score-number" id="scoreNum">{result?.matchScore ? result.matchScore : 0} </span>
+                      <span class="score-label">/ 100</span>
+                    </div>
                   </div>
                   
                   <div className="stats">
