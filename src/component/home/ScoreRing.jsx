@@ -1,4 +1,4 @@
-const ScoreRing=({ score = 84, label = "Overall Score" })=>{
+const ScoreRing=({ score = 84, label = "Overall Score", matchQuality = "" })=>{
     const deg = (score / 100) * 360;
     return (
     <div className="score-ring">
@@ -7,7 +7,7 @@ const ScoreRing=({ score = 84, label = "Overall Score" })=>{
         </div>
         <div className="score-label">
         <small>{label}</small>
-        <strong>Excellent</strong>
+        <strong>{matchQuality ? matchQuality : "Excellent"}</strong>
         </div>
     </div>
     );

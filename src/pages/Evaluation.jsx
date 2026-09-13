@@ -150,11 +150,10 @@ const Evaluation = () => {
                 </div> 
       
                 <div className="score-row">
-                  <div class="circle" id="scoreCircle">
-                    <span class="number" id="scoreNum">{result?.matchScore ? result.matchScore : 0}</span>
-                    <span class="label">/ 100</span>
-                  </div>
-                  
+                  <div className="resumePage">
+                    <ScoreRing score={result?.matchScore ? result.matchScore : 0} label="Overall" matchQuality={result?.matchQuality}  />
+                  </div>  
+              
                   <div className="stats">
                     <div className="stat-item">
                       <i className="fas fa-check-circle"></i> Relevance
