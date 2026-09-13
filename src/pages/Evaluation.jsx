@@ -150,7 +150,7 @@ const Evaluation = () => {
                 </div> 
       
                 <div className="score-row">
-                  <div className="">
+                  <div className="score-circle-wrapper">
                     <div class="score-circle" id="scoreCircle">
                       <span class="score-number" id="scoreNum">{result?.matchScore ? result.matchScore : 0} </span>
                       <span class="score-label">/ 100</span>
@@ -159,19 +159,19 @@ const Evaluation = () => {
                   
                   <div className="stats">
                     <div className="stat-item">
-                      <i className="fas fa-check-circle"></i> ATS Compatibility
+                      <i className="fas fa-check-circle"></i> Relevance
                       <span className="defaultValue">
                       {result?.atsScore ? result?.atsScore : "0"} %
                       </span>
                     </div>
                     <div className="stat-item">
-                      <i className="fas fa-brain"></i> Impact & Achievements
+                      <i className="fas fa-brain"></i> Skills density
                       <span className="defaultValue" >
                       {result?.atsScore ? result?.atsScore : "0"} %
                       </span>
                     </div>
                     <div className="stat-item">
-                      <i className="fas fa-clock"></i> Formatting 
+                      <i className="fas fa-clock"></i> Experience 
                       <span className="defaultValue">
                         {result?.atsScore ? result?.atsScore : "0"} % 
                       </span>
