@@ -159,19 +159,19 @@ const Evaluation = () => {
                     <div className="stat-item">
                       <i className="fas fa-check-circle"></i> Relevance
                       <span className="defaultValue">
-                      {result?.atsScore ? result?.atsScore : "0"} %
+                      {result?.relevance ? result?.relevance : "0"} %
                       </span>
                     </div>
                     <div className="stat-item">
                       <i className="fas fa-brain"></i> Skills density
                       <span className="defaultValue" >
-                      {result?.atsScore ? result?.atsScore : "0"} %
+                      {result?.skillsdensity ? result?.skillsdensity : "0"} %
                       </span>
                     </div>
                     <div className="stat-item">
                       <i className="fas fa-clock"></i> Experience 
                       <span className="defaultValue">
-                        {result?.atsScore ? result?.atsScore : "0"} % 
+                        {result?.experienceMatch ? result?.experienceMatch : "0"} % 
                       </span>
                     </div>
                   </div>
@@ -219,6 +219,10 @@ const Evaluation = () => {
                       })
                     }
                   </div>
+                </div>
+                <div class="footer-note">
+                  <span><i class="fas fa-lightbulb" style={{"color": "#f5b342"}}></i> Keywords: {result?.totalExperience} · {result?.currentDesignation}</span>
+                  <span><i class="fas fa-sync-alt"></i> instant</span>
                 </div>
                 </>
               ) : ""}
